@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  font-family: Helvetica, Arial, Trebuchet, sans-serif;
+}
+
+nav {
+  background-color: #ffb4b0;
+  border: 1px solid black;
+
+}
+
+#sidebar {
+  background-color: #4dd7fa;
+  border: 1px solid black;
+}
+
+#main {
+  background-color: #fefac0;
+  border: 1px solid black;
+}
+
+#main h2 {
+  color: #785616;
+}
