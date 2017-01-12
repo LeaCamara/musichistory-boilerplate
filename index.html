@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,62 +7,79 @@
 </head>
 
 <body>
+
   <h1>Music History Exercise</h1>
 
-  <nav>
-    <ul>
-      <li><a href="#">View music</a> | </li>
-      <li><a href="#">Add music</a> | </li>
-      <li><a href="#">Profile</a></li>
-    </ul>
-  </nav>
+  <div id="container">
 
-  <section id="sidebar">
-    <p>Song length:</p>
+    <nav>
+      <ul>
+        <li><a href="#">View music</a> | </li>
+        <li><a href="#">Add music</a> | </li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
 
-    <p>Artist:</p>
-    <select name="artist">
-      <option value="selectArtist" select="selected">Select an Artist</option>
-      <option value="bobdylan">Bob Dylan</option>
-      <option value="debussy">Debussy</option>
-      <option value="thechainsmokers">The Chainsmokers ft. Daya</option>
-      <option value="louisarmstrong">Louis Armstrong</option>
-      <option value="muddywaters">Muddy Waters</option>
-    </select>
+    <section id="sidebar">
+      <p>Song length:</p>
+      <input type="range" id="song-length-slider">
 
-    <p>Album:</p>
-    <select name="album">
-      <option value="selectAlbum" select="selected">Select an Album</option>
-      <option value="Hwy61">Highway 61 Revisited</option>
-      <option value="bergamasque">Suite bergamasque</option>
-      <option value="dontletmedown">Don’t Let Me Down</option>
-      <option value="wonderfulworld">What a Wonderful World</option>
-      <option value="fathersandson">Fathers and Sons</option>
-    </select>
+      <p>Artist:</p>
+      <select name="artist">
+        <option value="selectArtist" select="selected">Select an Artist</option>
+        <option value="bobdylan">Bob Dylan</option>
+        <option value="debussy">Debussy</option>
+        <option value="thechainsmokers">The Chainsmokers ft. Daya</option>
+        <option value="louisarmstrong">Louis Armstrong</option>
+        <option value="muddywaters">Muddy Waters</option>
+      </select>
 
-    <p>Genre:</p>
-    <input type="checkbox" name="genre" id="rock" value="rock"><label for="rock">Rock</label>
-    <input type="checkbox" name="genre" id="classical" value="classical"><label for="classical">Classical</label>
-    <input type="checkbox" name="genre" id="pop" value="pop"><label for="pop">Pop</label>
-    <input type="checkbox" name="genre" id="jazz" value="jazz"><label for="jazz">Jazz</label>
-    <input type="checkbox" name="genre" id="blues" value="blues"><label for="blues">Blues</label>
-    <input type="checkbox" name="genre" id="Hiphop" value="Hiphop"><label for="Hiphop">Hip hop</label>
-    <br><br>
-    <input type="submit" value="Filter">
+      <p>Album:</p>
+      <select name="album">
+        <option value="selectAlbum" select="selected">Select an Album</option>
+        <option value="Hwy61">Highway 61 Revisited</option>
+        <option value="bergamasque">Suite bergamasque</option>
+        <option value="dontletmedown">Don’t Let Me Down</option>
+        <option value="wonderfulworld">What a Wonderful World</option>
+        <option value="fathersandson">Fathers and Sons</option>
+      </select>
 
-  </section>
+      <p>Genre:</p>
 
-  <section id="main">
-    <h2>Song Name</h2>
-    <p>Artist Name   |   Album name   |   Genre</p>
-    <h2>Song Name</h2>
-    <p>Artist Name   |   Album name   |   Genre</p>
-    <h2>Song Name</h2>
-    <p>Artist Name   |   Album name   |   Genre</p>
-    <h2>Song Name</h2>
-    <p>Artist Name   |   Album name   |   Genre</p>
-  </section>
+      <div>
+        <ul class="checkbox floatLeft">
+          <li><input type="checkbox" class="checkbox" name="genre" id="rock" value="rock"><label for="rock">Rock</label></li><br>
+          <li><input type="checkbox" class="checkbox" name="genre" id="pop" value="pop"><label for="pop">Pop</label></li><br>
+          <li><input type="checkbox" class="checkbox" name="genre" id="blues" value="blues"><label for="blues">Blues</label></li><br>
+        </ul>
+      </div>
 
+      <div>
+        <ul class="checkbox floatLeft">
+          <li><input type="checkbox" class="checkbox" name="genre" id="classical" value="classical"><label for="classical">Classical</label></li><br>
+          <li><input type="checkbox" class="checkbox" name="genre" id="jazz" value="jazz"><label for="jazz">Jazz</label></li><br>
+          <li><input type="checkbox" class="checkbox" name="genre" id="Hiphop" value="Hiphop"><label for="Hiphop">Hip hop</label></li><br>
+        </ul>
+      </div>
+
+      <div class="clearFloat">
+        <input type="submit" value="Filter">
+      </div>
+
+    </section>
+
+    <section id="main">
+      <h2>Song Name</h2>
+      <p>Artist Name   |   Album name   |   Genre</p>
+      <h2>Song Name</h2>
+      <p>Artist Name   |   Album name   |   Genre</p>
+      <h2>Song Name</h2>
+      <p>Artist Name   |   Album name   |   Genre</p>
+      <h2>Song Name</h2>
+      <p>Artist Name   |   Album name   |   Genre</p>
+    </section>
+
+  </div>
 
 </body>
 </html>

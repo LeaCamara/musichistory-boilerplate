@@ -3,11 +3,17 @@ body {
   font-family: Helvetica, Arial, Trebuchet, sans-serif;
 }
 
+#container {
+  width: 95%;
+  margin: 0 auto;
+}
+
 nav {
   background-color: #ffb4b0;
   border: 1px solid black;
   margin-right: 2%;
-
+  text-align: left;
+  padding-left: 0;
 }
 
 li {
@@ -17,16 +23,24 @@ li {
 
 a:active {
   color: black;
-  text-decoration: none;
+  text-decoration: none; /* why isn't this working? */
 }
 
 #sidebar {
   background-color: #4dd7fa;
   border: 1px solid black;
-  width: 25%;
+  width: 23%;
   float: left;
-  margin-top: 2%;
-  padding-left: .2em;
+  margin-top: 1%;
+  margin-right: 1%;
+  padding-left: .4em;
+  height: 25em;
+}
+
+input#song-length-slider {
+  width: 85%;
+  border: 1px solid black;
+  /*background-color: white;*/
 }
 
 select {
@@ -34,19 +48,25 @@ select {
   background-color: white;
 }
 
-#main {
-  background-color: #fefac0;
+.checkbox {
+  /*display: flex;*/
+  padding-left: .2em;
+  float: left;
   border: 1px solid black;
-  width: 71%;
-  float: right;
-  margin-right: 2%;
-  margin-top: 2%;
-  padding: .2em;
-  padding-left: .3em;
 }
 
-#main h2 {
-  color: #785616;
+/*.flexStart {
+    display: flex;
+    justify-content: center;
+    float: none;
+}*/
+
+/*.floatLeft {
+  float: left;
+}*/
+
+.clearFloat {
+  clear: both;
 }
 
 input[type="submit"] {
@@ -59,4 +79,20 @@ input[type="submit"] {
   margin: 0 auto;
   display: block;
   margin-bottom: 1em;
+}
+
+#main {
+  background-color: #fefac0;
+  border: 1px solid black;
+  width: 71%;
+  float: right;
+  margin-right: 2%;
+  margin-top: 1%;
+  padding: .2em;
+  padding-left: .8em;
+  height: 25em;
+}
+
+#main h2 {
+  color: #785616;
 }
