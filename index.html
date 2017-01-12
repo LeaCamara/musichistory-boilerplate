@@ -12,8 +12,8 @@
 
   <nav>
     <ul>
-      <li><a href="#">View music</a></li>
-      <li><a href="#">Add music</a></li>
+      <li><a href="#">View music</a> | </li>
+      <li><a href="#">Add music</a> | </li>
       <li><a href="#">Profile</a></li>
     </ul>
   </nav>
@@ -22,10 +22,34 @@
     <p>Song length:</p>
 
     <p>Artist:</p>
+    <select name="artist">
+      <option value="selectArtist" select="selected">Select an Artist</option>
+      <option value="bobdylan">Bob Dylan</option>
+      <option value="debussy">Debussy</option>
+      <option value="thechainsmokers">The Chainsmokers ft. Daya</option>
+      <option value="louisarmstrong">Louis Armstrong</option>
+      <option value="muddywaters">Muddy Waters</option>
+    </select>
 
     <p>Album:</p>
+    <select name="album">
+      <option value="selectAlbum" select="selected">Select an Album</option>
+      <option value="Hwy61">Highway 61 Revisited</option>
+      <option value="bergamasque">Suite bergamasque</option>
+      <option value="dontletmedown">Don’t Let Me Down</option>
+      <option value="wonderfulworld">What a Wonderful World</option>
+      <option value="fathersandson">Fathers and Sons</option>
+    </select>
 
     <p>Genre:</p>
+    <input type="checkbox" name="genre" id="rock" value="rock"><label for="rock">Rock</label>
+    <input type="checkbox" name="genre" id="classical" value="classical"><label for="classical">Classical</label>
+    <input type="checkbox" name="genre" id="pop" value="pop"><label for="pop">Pop</label>
+    <input type="checkbox" name="genre" id="jazz" value="jazz"><label for="jazz">Jazz</label>
+    <input type="checkbox" name="genre" id="blues" value="blues"><label for="blues">Blues</label>
+    <input type="checkbox" name="genre" id="Hiphop" value="Hiphop"><label for="Hiphop">Hip hop</label>
+    <br><br>
+    <input type="submit" value="Filter">
 
   </section>
 
