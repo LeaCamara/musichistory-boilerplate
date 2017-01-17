@@ -31,7 +31,7 @@ You will be building the basic structure of your Music History application in HT
 
 Visit the [Music History mockup](https://moqups.com/chortlehoort/1E8LJX7r/) that I created. You will be recreating that document in your own HTML file.
 
-### Criteria 
+### Criteria
 
 1. Create five options for the artist select element of any artist that you enjoy.
 1. Create at least five options for the album select element. One, or more, album for each artist.
@@ -41,3 +41,30 @@ Visit the [Music History mockup](https://moqups.com/chortlehoort/1E8LJX7r/) that
 ## Completing
 
 Once you are done, make sure you add your files to git, make a commit, and then push your new code up to Github with the following command `git push origin master`.
+
+******Music History Part 2******
+
+Setup
+
+Create a branch in your musichistory repository named version2.
+Switch to that branch.
+Requirements
+
+Use JavaScript arrays, loops, and innerHTML to show the music you love.
+
+Students must use JavaScript to create a list of songs in the index.html file for their Music History project. Have them download the songs.js file, which contains an array of strings with song information.
+
+Each student must add one song to the beginning and the end of the array.
+Loop over the array and remove any words or characters that obviously don't belong.
+Students must find and replace the > character in each item with a - character.
+Must add each string to the DOM in index.html in the main content area.
+
+{Song name} by {Artist} on the album {Album}
+Merging your branch
+
+After you've got all of the requirements completed, follow these steps.
+
+In your musichistory directory, enter the command git checkout master. This switches you back to the master branch.
+git merge -X theirs version2
+If you see a vim screen with a default message in it just :x to save and exit.
+Your branch is now merged into the master branch and you can push the master branch up to Github with git push origin master.
