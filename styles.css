@@ -3,6 +3,10 @@ body {
   font-family: Helvetica, Arial, Trebuchet, sans-serif;
 }
 
+h1 {
+  padding-left: 1em;
+}
+
 #container {
   width: 95%;
   margin: 0 auto;
@@ -19,17 +23,18 @@ nav {
 li {
   list-style-type: none;
   display: inline;
+  line-height: 1.6em;
 }
 
 a:active {
   color: black;
-  text-decoration: none; /* why isn't this working? */
+  text-decoration: none;
 }
 
 #sidebar {
   background-color: #4dd7fa;
   border: 1px solid black;
-  width: 23%;
+  width: 20%;
   float: left;
   margin-top: 1%;
   margin-right: 1%;
@@ -49,21 +54,9 @@ select {
 }
 
 .checkbox {
-  /*display: flex;*/
-  padding-left: .2em;
+  padding: .5em;
   float: left;
-  border: 1px solid black;
 }
-
-/*.flexStart {
-    display: flex;
-    justify-content: center;
-    float: none;
-}*/
-
-/*.floatLeft {
-  float: left;
-}*/
 
 .clearFloat {
   clear: both;
@@ -84,7 +77,7 @@ input[type="submit"] {
 #main {
   background-color: #fefac0;
   border: 1px solid black;
-  width: 71%;
+  width: 74%;
   float: right;
   margin-right: 2%;
   margin-top: 1%;
