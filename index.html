@@ -14,44 +14,48 @@
 
     <nav>
       <ul>
-        <li><a href="#">View music</a> | </li>
-        <li><a href="#">Add music</a> | </li>
-        <li><a href="#">Profile</a></li>
+        <li><a href="#" class="nav">View music</a> | </li>
+        <li><a href="#" class="nav">Add music</a> | </li>
+        <li><a href="#" class="nav">Profile</a></li>
       </ul>
     </nav>
 
     <section id="sidebar">
-      <p>Song length:</p>
-      <input type="range" id="song-length-slider">
+      <p class="sidebar-spacing">Song length:</p>
+      <p><input type="range" id="song-length-slider"></p>
 
       <p>Artist:</p>
-      <select name="artist">
-        <option value="selectArtist" select="selected">Select an Artist</option>
-        <option value="bobdylan">Bob Dylan</option>
-        <option value="debussy">Debussy</option>
-        <option value="thechainsmokers">The Chainsmokers ft. Daya</option>
-        <option value="louisarmstrong">Louis Armstrong</option>
-        <option value="muddywaters">Muddy Waters</option>
-      </select>
+      <p>
+        <select name="artist">
+          <option value="selectArtist" select="selected">Select an Artist</option>
+          <option value="bobdylan">Bob Dylan</option>
+          <option value="debussy">Debussy</option>
+          <option value="thechainsmokers">The Chainsmokers ft. Daya</option>
+          <option value="louisarmstrong">Louis Armstrong</option>
+          <option value="muddywaters">Muddy Waters</option>
+        </select>
+      </p>
 
       <p>Album:</p>
-      <select name="album">
-        <option value="selectAlbum" select="selected">Select an Album</option>
-        <option value="Hwy61">Highway 61 Revisited</option>
-        <option value="bergamasque">Suite bergamasque</option>
-        <option value="dontletmedown">Don’t Let Me Down</option>
-        <option value="wonderfulworld">What a Wonderful World</option>
-        <option value="fathersandson">Fathers and Sons</option>
-      </select>
+      <p>
+        <select name="album">
+          <option value="selectAlbum" select="selected">Select an Album</option>
+          <option value="Hwy61">Highway 61 Revisited</option>
+          <option value="bergamasque">Suite bergamasque</option>
+          <option value="dontletmedown">Don’t Let Me Down</option>
+          <option value="wonderfulworld">What a Wonderful World</option>
+          <option value="fathersandson">Fathers and Sons</option>
+        </select>
+      </p>
 
-      <p>Genre:</p>
-
-      <div>
-        <ul class="checkbox">
-          <li><input type="checkbox" class="checkbox" name="genre" id="rock" value="rock"><label for="rock">Rock</label></li><br>
-          <li><input type="checkbox" class="checkbox" name="genre" id="pop" value="pop"><label for="pop">Pop</label></li><br>
-          <li><input type="checkbox" class="checkbox" name="genre" id="blues" value="blues"><label for="blues">Blues</label></li><br>
-        </ul>
+      <div class="genre">Genre:
+        <div>
+          <ul class="checkbox">
+            <li><input type="checkbox" class="checkbox" name="genre" id="rock" value="rock"><label for="rock">Rock</label></li><br>
+            <li><input type="checkbox" class="checkbox" name="genre" id="pop" value="pop"><label for="pop">Pop</label></li><br>
+            <li><input type="checkbox" class="checkbox" name="genre" id="blues" value="blues"><label for="blues">Blues</label></li><br>
+          </ul>
+        </div>
       </div>
 
       <div>
@@ -62,8 +66,7 @@
         </ul>
       </div>
 
-      <input type="submit" value="Filter" class="clearFloat">
-
+      <input type="submit" value="Filter">
     </section>
 
     <section id="main">
